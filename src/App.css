@@ -50,21 +50,21 @@ nav {
 .btn--login {
  
   text-decoration: none;
-  background: #FFAD57;
+  /* background: #FFAD57; */
+  background: linear-gradient(90deg, hsl(357, 100%, 70%, 1) 0%, hsl(30, 100%, 72%, 1) 100%);
   padding: 10px 29px;
   color: #FFFFFF;
   font-family: 'Roboto Slab';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  background: #FFAD57;
   border-radius: 22px;
   transition: filter 300ms;
 }
 
 .btn--login:hover {
   cursor: pointer;
-  filter: saturate(5);
+  filter: saturate(2);
 }
 
 
@@ -158,4 +158,8 @@ nav {
     font-size: 16px;
     color: #000000;
   }
+
+  .nav--closed li a:hover{
+    color: #FFAD57;
+  }  
 }
