@@ -1,10 +1,11 @@
 nav {
   height: 60px;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
   display: flex;
   padding: 0px 140px;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 
 }
 
@@ -100,6 +101,7 @@ nav {
 
 
 
+
 @media(max-width:1024px) {
 
   .toggle-button {
@@ -123,16 +125,20 @@ nav {
   .nav--links {
     flex-direction: column;
     position: absolute;
-    left: 0px;
-    top: 60px;
-    width: 90%;
-
-
+    left: 40px;
+    top: 100px;
+    gap: 40px;
   }
 
   .nav--links li {
-    text-align: center;
-    width: 90%;
+    font-size: larger;
+  }
+
+  .nav--links li a {
+    font-family: 'Zilla Slab';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
   }
 
 }
