@@ -28,7 +28,7 @@ export default function Navbar() {
                 <span className="bar"></span>
             </a>
             
-            <ul className={` ${open? "nav--links":"nav--closed"}`}>
+            <ul className={` ${open? "nav--open":"nav--closed"}`}>
                 <li><a href="#">All Services</a></li>
                 <li><a href="#">Earn With Us</a></li>
                 <li><a href="#">Track order</a></li>

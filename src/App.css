@@ -27,7 +27,7 @@ nav {
 
 .nav--links li a{
   text-decoration: none;
-  font-family: 'Roboto Slab';
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -55,7 +55,7 @@ nav {
   background: linear-gradient(90deg, hsl(357, 100%, 70%, 1) 0%, hsl(30, 100%, 72%, 1) 100%);
   padding: 10px 29px;
   color: #FFFFFF;
-  font-family: 'Roboto Slab';
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -143,27 +143,35 @@ nav {
 
   }
 
-  .nav--links {
+  .nav--open {
+    display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     left: 0px;
-    top: 40px;
-    gap: 40px;
-    padding-top: 20px;
-    background-color: #FFFFFF;
-    width: 100%;
+    top: 45px;
+    width: 60%;
     height: 100%;
   }
 
-  .nav--links li {
-    font-size: larger;
+  .nav--open li {
+    list-style: none;
+    margin-top: 30px;
+
   }
 
-  .nav--links li a {
-    font-family: 'Zilla Slab';
+  .nav--open li a {
+    text-decoration: none;
+    display: block;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 28px;
+    font-size: 20px;
+    padding: 10px 0px;
+    color: #000;
+  }
+
+  .nav--open > li > a:hover {
+    color: #FFAD57;
   }
 
 }
@@ -177,7 +185,7 @@ nav {
 
   .nav--closed li a{
     text-decoration: none;
-    font-family: 'Roboto Slab';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -185,6 +193,25 @@ nav {
   }
 
   .nav--closed li a:hover{
+    color: #FFAD57;
+  }  
+
+  .nav--open {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .nav--open li a{
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+  }
+
+  .nav--open li a:hover{
     color: #FFAD57;
   }  
 }
