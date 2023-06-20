@@ -12,8 +12,13 @@ export default function Hero() {
                         <span className="btn-loc-txt">Uttara</span>
                     </button>
                 </div>
+                <div className="hero-serach-sect">
+                    <input className="hero-search" type="text" placeholder="Search.."></input>
+                    <button className="btn-hero-search">
+                        <img src={process.env.PUBLIC_URL + "img/btn-search-ico.png"}/>
+                    </button>
+                </div>
                 
-                <input className="hero-search" type="text" placeholder="Search.."></input>
 
             </div>
         </>
