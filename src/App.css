@@ -106,10 +106,6 @@ nav {
   background-color: gray;
 }
 
-.hero-search-sect {
-
-}
-
 .hero-search {
   position: absolute;
   top: 373px;
@@ -152,15 +148,76 @@ nav {
   border-style: none;
   position: absolute;
   top: 373px;
-  left: 26vw;
-  width: 10vw;
-  
+  right: 64vw;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .btn-loc-txt{
   font-family: 'Montserrat';
-  font-size: 20px;
+  font-size: 16px;
 }
+
+.btn-loc:hover {
+  cursor: pointer;
+}
+
+.modal {
+  border-style: none;
+  border-radius: 5px;
+  padding: 0px;
+  width: 764px;
+  height: 420px;
+}
+
+ .modal-title {
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.modal-text {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.modal-body {
+  margin: 30px 100px 0px 100px;
+}
+
+.modal-search {
+  border: 1px solid grey;
+  height: 36px;
+  width: 366px;
+  margin-right: 20px;
+  border-radius: 4px;
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.modal-button {
+  height: 40px;
+  font-size: 15px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  color: #FFAD57;
+  border: 1px solid grey;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  font-weight: bold;
+}
+
+.modal-button:hover{
+  background-color: hsl(357, 100%, 70%, 1);
+  color: #FFFFFF;
+
+
+}
+
 
 @media(max-width:1024px) {
 
