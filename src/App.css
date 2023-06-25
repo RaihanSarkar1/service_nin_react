@@ -1,3 +1,4 @@
+
 nav {
   height: 60px;
   display: flex;
@@ -50,7 +51,7 @@ nav {
 }
 
 .btn--login {
- 
+  
   text-decoration: none;
   /* background: #FFAD57; */
   background: linear-gradient(90deg, hsl(357, 100%, 70%, 1) 0%, hsl(30, 100%, 72%, 1) 100%);
@@ -71,14 +72,14 @@ nav {
 
 
 .toggle-button {
-    position: absolute;
-    top: 18.5px;
-    right: 18px;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 22px;
+  position: absolute;
+  top: 18.5px;
+  right: 18px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
 }
 
 .toggle-button .bar {
@@ -130,7 +131,7 @@ nav {
   padding: 8px 18px;
   display: flex;
   align-items: center;
-
+  
 }
 
 .btn-hero-search:hover {
@@ -168,9 +169,10 @@ nav {
   padding: 0px;
   width: 764px;
   height: 420px;
+  scrollbar-width: thin;
 }
 
- .modal-title {
+.modal-title {
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -192,7 +194,7 @@ nav {
 .modal-search {
   border: 1px solid grey;
   height: 36px;
-  width: 366px;
+  width: 360px;
   margin-right: 20px;
   border-radius: 4px;
   padding-left: 20px;
@@ -212,10 +214,32 @@ nav {
 }
 
 .modal-button:hover{
-  background-color: hsl(357, 100%, 70%, 1);
+  background-color: #F2A066;
   color: #FFFFFF;
+  cursor: pointer;
+}
 
+.locations {
+  margin-top: 30px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 
+.locations > li {
+  width: 256px;
+  list-style: none;
+  padding: 10px 0px 10px 10px;
+  border: 1px solid #727272;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: Montserrat;
+}
+
+.locations > li:hover {
+  border:1px solid #F2A066;
+  cursor: pointer;
 }
 
 
