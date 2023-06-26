@@ -271,7 +271,7 @@ nav {
   list-style: none;
   border-radius: 5px;
   width: 170px;
-  height: 100px;
+  height: 85px;
 }
 
 .services-box li:hover {
@@ -298,6 +298,15 @@ nav {
   margin-top: 7px;
 }
 
+.pop-sect {
+  margin: 200px 140px 0px 140px;
+}
+
+.title {
+  font-size: 24px;
+  font-family: Montserrat;
+  font-weight: 500;
+}
 
 @media(max-width:1024px) {
 
