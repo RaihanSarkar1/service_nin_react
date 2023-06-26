@@ -78,7 +78,7 @@ export default function Hero() {
 
         <dialog className="modal" ref={modalRef}>
             <div className="modal-title">
-                <img src={process.env.PUBLIC_URL + "img/modal-loc.png"} />
+                <img src={process.env.PUBLIC_URL + "img/mod-loc.png"} />
                 <span className="modal-text">Select your Area in Dhaka</span>
             </div>
             <div className="modal-body">

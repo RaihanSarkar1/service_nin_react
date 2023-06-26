@@ -173,6 +173,7 @@ nav {
 }
 
 .modal-title {
+  background-color: #FFFFFF;
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -276,7 +277,7 @@ nav {
 
   .nav--open li {
     list-style: none;
-    margin-top: 30px;
+    margin-top: 20px;
 
   }
 
