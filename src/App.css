@@ -128,7 +128,7 @@ nav {
   border-radius: 8px;
   position: absolute;
   top: 380px;
-  right: 22vw;
+  right: 23.5vw;
   padding: 8px 18px;
   display: flex;
   align-items: center;
@@ -282,7 +282,7 @@ nav {
 
 
 .services-box li a{
-
+  color: black;
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -349,6 +349,10 @@ nav {
 
   .nav--open > li > a:hover {
     color: #FFAD57;
+  }
+
+  .services-box {
+    display: none;
   }
 
 }
