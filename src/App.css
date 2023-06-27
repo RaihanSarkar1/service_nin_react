@@ -258,21 +258,23 @@ nav {
   height: 120px;
   display: flex;
   align-items: center;
+  
 }
 
 .service-items {
   margin: 0px;
   padding: 0px;
   display: flex;
-  flex-direction: row;
+  flex-wrap: nowrap;
   gap: 20px;
+  overflow-x: auto;
 }
 
 .services-box li {
   list-style: none;
   border-radius: 5px;
   width: 170px;
-  height: 85px;
+  flex: 0 0 auto; 
 }
 
 .services-box li:hover {
@@ -296,7 +298,7 @@ nav {
 }
 
 #healthp {
-  margin-top: 7px;
+  margin-top: 6px;
 }
 
 .pop-sect {

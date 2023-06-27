@@ -32,6 +32,12 @@ export default function Services() {
                         <p id="healthp">Health & Emergency</p>
                     </a>
                 </li>
+                <li>
+                    <a href="#">
+                        <img src={process.env.PUBLIC_URL + "img/all.png"} />
+                        <p>All Services</p>
+                    </a>
+                </li>
             </ul>
         </div>
     )
