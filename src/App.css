@@ -43,9 +43,9 @@ nav {
   display: block;
 }
 
-.nav--open li a:hover {
+/* .nav--open li a:hover {
   color: #FFAD57;
-}
+} */
 
 .nav--login {
   list-style: none;
@@ -373,12 +373,13 @@ nav {
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    padding: 10px 0px;
+    padding: 20px 40px;
     color: #000;
   }
 
   .nav--open > li > a:hover {
-    color: #FFAD57;
+    background-color: #FFAD57;
+    color: #FFFFFF;
   }
 
   .services-box {
