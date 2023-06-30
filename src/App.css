@@ -295,6 +295,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  gap: 10px;
   align-items: center;
   font-size: 13px;
   font-family: Montserrat;
@@ -303,7 +304,7 @@ nav {
 }
 
 #healthp {
-  margin-top: 6px;
+  margin-top: -8px;
 }
 
 .pop-sect {
