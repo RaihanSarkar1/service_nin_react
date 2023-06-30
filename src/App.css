@@ -134,7 +134,7 @@ nav {
   border-radius: 8px;
   position: absolute;
   top: 380px;
-  right: 23.5vw;
+  right: 24.5vw;
   padding: 8px 18px;
   display: flex;
   align-items: center;
@@ -177,6 +177,10 @@ nav {
   width: 764px;
   height: 420px;
   scrollbar-width: thin;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .modal-title {
@@ -350,7 +354,7 @@ nav {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 42px;
+    top: 45px;
     width: 100%;
     height: 100%;
     background-color: #FFFFFF;
