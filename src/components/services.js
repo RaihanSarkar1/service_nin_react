@@ -1,9 +1,36 @@
+import { useRef } from "react"
+
 export default function Services() {
+    const arrowRef = useRef([]);
+
+    const servRef = useRef(null);
+
+    const firstRef = useRef(null); 
+
+    const showHideIcons= () => {
+        console.log(arrowRef.current[0])
+        arrowRef.current[0].style.display = servRef.scrollLeft == 0 ? "none" : "block";
+    }
+    
+    
+    function handleClick(e) {
+        let firstIconWidth = firstRef.current.clientWidth + 20;
+        // console.log(e.target);
+        
+        servRef.current.scrollLeft += e.target.id == "left" ? -firstIconWidth : firstIconWidth;
+        showHideIcons();
+    }
+
+
+
     return (
-        <div className="services-box">
-            <ul className="service-items">
+        <div className="services-box" >
+            <i onClick={handleClick} ref={(el) => (arrowRef.current[0] = el)}>
+                <img id="left" src={process.env.PUBLIC_URL + "img/left.png"} />
+            </i>
+            <ul className="service-items" ref={servRef}>
                 <li>
-                    <a href="#">
+                    <a href="#" ref={firstRef}>
                         <img src={process.env.PUBLIC_URL + "img/com.png"} />
                         <p>Computer & IT</p>
                     </a>
@@ -39,6 +66,9 @@ export default function Services() {
                     </a>
                 </li>
             </ul>
+            <i onClick={handleClick} ref={(el) => (arrowRef.current[1] = el)}> 
+                <img id="right" src={process.env.PUBLIC_URL + "img/right.png"} />
+            </i>
         </div>
     )
 }
