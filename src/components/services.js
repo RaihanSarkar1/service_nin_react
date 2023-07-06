@@ -8,8 +8,9 @@ export default function Services() {
     const firstRef = useRef(null); 
 
     const showHideIcons= () => {
-        console.log(arrowRef.current[0])
-        arrowRef.current[0].style.display = servRef.scrollLeft == 0 ? "none" : "block";
+        // console.log(arrowRef.current[0])
+        console.log(servRef.current.scrollLeft)
+        arrowRef.current[0].style.display = servRef.current.scrollLeft == 0 ? "none" : "block";
     }
     
     
@@ -18,7 +19,7 @@ export default function Services() {
         // console.log(e.target);
         
         servRef.current.scrollLeft += e.target.id == "left" ? -firstIconWidth : firstIconWidth;
-        showHideIcons();
+        setTimeout(() => showHideIcons(), 300); //calling showhide after 300ms
     }
 
 

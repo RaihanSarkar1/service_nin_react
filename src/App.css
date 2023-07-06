@@ -255,7 +255,7 @@ nav {
 }
 
 .services-box {
-  margin-top: 120px;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 10px;
@@ -276,6 +276,7 @@ nav {
 
 .services-box i:first-child{
   left: -25px;
+  display: none;
 }
 
 .services-box i:last-child {
