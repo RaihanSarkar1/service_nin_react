@@ -58,15 +58,18 @@ export default function Hero() {
         <>
         <div className="hero">
             
-            <div className="location" onClick={() => handleLocClick()}>
-                <button className="btn-loc">
-                    <span>
-                        <img src={process.env.PUBLIC_URL + "img/location-ico.png"}/>
-                    </span>
-                    <span className="btn-loc-txt">{loc}</span>
-                </button>
-            </div>
-            <div className="hero-serach-sect">
+            <button className="btn-loc" onClick={() => handleLocClick()}>
+                <span>
+                    <img src={process.env.PUBLIC_URL + "img/location-ico.png"}/>
+                </span>
+                <span className="btn-loc-txt">{loc}</span>
+            </button>
+            
+
+            <div className="hero-search-sect">
+
+
+                
                 <input className="hero-search" type="text" placeholder="Search.."></input>
                 <button className="btn-hero-search">
                     <img src={process.env.PUBLIC_URL + "img/btn-search-ico.png"}/>
