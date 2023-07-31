@@ -11,6 +11,7 @@ export default function Services() {
         // console.log(arrowRef.current[0])
         console.log(servRef.current.scrollLeft)
         arrowRef.current[0].style.display = servRef.current.scrollLeft == 0 ? "none" : "block";
+        arrowRef.current[1].style.display = servRef.current.scrollLeft > 0 ? "none" : "block";
     }
     
     
@@ -19,7 +20,7 @@ export default function Services() {
         // console.log(e.target);
         
         servRef.current.scrollLeft += e.target.id == "left" ? -firstIconWidth : firstIconWidth;
-        setTimeout(() => showHideIcons(), 300); //calling showhide after 300ms
+        setTimeout(() => showHideIcons(), 400); //calling showhide after 400ms
     }
 
 
